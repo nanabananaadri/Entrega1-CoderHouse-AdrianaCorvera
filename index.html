@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Verduras y Frutas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Venta de Verduras y Frutas</h1>
+    <form id="formulario">
+        <label for="producto">Producto:</label>
+        <select id="producto">
+            <option value="tomate">Tomate</option>
+            <option value="chile">Chile</option>
+            <option value="cebolla">Cebolla</option>
+            <option value="fresas">Fresas</option>
+            <option value="manzanas">Manzanas</option>
+            <option value="bananos">Bananos</option>
+        </select>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="1" value="1">
+        <button type="button" onclick="agregarAlCarrito()">Agregar al Carrito</button>
+    </form>
+    <div id="contenido-carrito"></div>
+</body>
+</html>
